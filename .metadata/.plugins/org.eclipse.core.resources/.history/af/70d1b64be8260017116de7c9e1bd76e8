@@ -1,0 +1,13 @@
+
+public class JamesBond {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	public boolean bondRegex(String input){
+		
+	}
+
+}

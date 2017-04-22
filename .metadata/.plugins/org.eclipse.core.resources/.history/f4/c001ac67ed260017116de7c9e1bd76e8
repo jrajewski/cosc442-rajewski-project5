@@ -1,0 +1,1160 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class JamesBondTest {
+
+	@Test
+	public void testBondRegex() {
+		fail("Not yet implemented");
+	}
+	Test Generation Using the W-method. V2.0. August 1, 2013
+
+	Enter filename: task3Input.txt
+	FSM input from:  task3Input.txt
+	States: 6
+	Edges 72
+	Input alphabet:
+	(
+	)
+	0
+	1
+	2
+	3
+	4
+	5
+	6
+	7
+	8
+	9
+
+	Output alphabet:
+	1
+	no
+	yes
+
+	From 	 Input/Output 	 To
+	1	 3/no		 1
+	1	 4/no		 1
+	1	 (/no		 2
+	1	 6/no		 1
+	1	 5/no		 1
+	1	 1/no		 1
+	1	 0/no		 1
+	1	 9/no		 1
+	1	 7/no		 1
+	1	 2/no		 1
+	1	 )/no		 1
+	1	 8/no		 1
+	2	 7/no		 2
+	2	 0/no		 3
+	2	 )/no		 2
+	2	 9/no		 2
+	2	 3/no		 2
+	2	 5/no		 2
+	2	 8/no		 2
+	2	 2/no		 2
+	2	 4/no		 2
+	2	 (/no		 2
+	2	 1/no		 2
+	2	 6/no		 2
+	3	 0/no		 4
+	3	 (/no		 2
+	3	 3/no		 2
+	3	 7/no		 2
+	3	 4/no		 2
+	3	 2/no		 2
+	3	 6/no		 2
+	3	 9/no		 2
+	3	 )/no		 2
+	3	 1/no		 2
+	3	 5/no		 2
+	3	 8/no		 2
+	4	 3/no		 2
+	4	 4/no		 2
+	4	 )/no		 2
+	4	 (/no		 2
+	4	 1/no		 2
+	4	 7/no		 5
+	4	 5/no		 2
+	4	 9/no		 2
+	4	 2/no		 2
+	4	 6/no		 2
+	4	 8/no		 2
+	4	 0/no		 2
+	5	 1/no		 5
+	5	 2/no		 5
+	5	 8/no		 5
+	5	 )/yes		 6
+	5	 (/no		 5
+	5	 0/no		 5
+	5	 6/no		 5
+	5	 7/no		 5
+	5	 3/no		 5
+	5	 4/no		 5
+	5	 5/no		 5
+	5	 9/no		 5
+	6	 3/yes		 6
+	6	 5/yes		 6
+	6	 4/yes		 6
+	6	 )/1		 6
+	6	 0/yes		 6
+	6	 6/yes		 6
+	6	 9/yes		 6
+	6	 7/yes		 6
+	6	 (/yes		 6
+	6	 1/yes		 6
+	6	 2/yes		 6
+	6	 8/yes		 6
+
+	Transition cover set (P). 73 entries.
+	Empty ( (( () (0 (0( (0) (00 (00( (00) (000 (001 (002 (003 (004 (005 (006 (007 (007( (007) (007)( (007)) (007)0 (007)1 (007)2 (007)3 (007)4 (007)5 (007)6 (007)7 (007)8 (007)9 (0070 (0071 (0072 (0073 (0074 (0075 (0076 (0077 (0078 (0079 (008 (009 (01 (02 (03 (04 (05 (06 (07 (08 (09 (1 (2 (3 (4 (5 (6 (7 (8 (9 ) 0 1 2 3 4 5 6 7 8 9 
+
+	W Set. 5 entries.
+	( ) 007) 07) 7) 
+
+	Number of Test Cases :347
+	Test cases: [(, ((, (((, ((), ((007), ((07), ((7), (), ()(, ()), ()007), ()07), ()7), (0(, (0((, (0(), (0(007), (0(07), (0(7), (0), (0)(, (0)), (0)007), (0)07), (0)7), (00(, (00((, (00(), (00(007), (00(07), (00(7), (00), (00)(, (00)), (00)007), (00)07), (00)7), (000(, (000), (000007), (00007), (0007), (001(, (001), (001007), (00107), (0017), (002(, (002), (002007), (00207), (0027), (003(, (003), (003007), (00307), (0037), (004(, (004), (004007), (00407), (0047), (005(, (005), (005007), (00507), (0057), (006(, (006), (006007), (00607), (0067), (007(, (007((, (007(), (007(007), (007(07), (007(7), (007), (007)(, (007)((, (007)(), (007)(007), (007)(07), (007)(7), (007)), (007))(, (007))), (007))007), (007))07), (007))7), (007)0(, (007)0), (007)0007), (007)007), (007)07), (007)1(, (007)1), (007)1007), (007)107), (007)17), (007)2(, (007)2), (007)2007), (007)207), (007)27), (007)3(, (007)3), (007)3007), (007)307), (007)37), (007)4(, (007)4), (007)4007), (007)407), (007)47), (007)5(, (007)5), (007)5007), (007)507), (007)57), (007)6(, (007)6), (007)6007), (007)607), (007)67), (007)7(, (007)7), (007)7007), (007)707), (007)77), (007)8(, (007)8), (007)8007), (007)807), (007)87), (007)9(, (007)9), (007)9007), (007)907), (007)97), (0070(, (0070), (0070007), (007007), (00707), (0071(, (0071), (0071007), (007107), (00717), (0072(, (0072), (0072007), (007207), (00727), (0073(, (0073), (0073007), (007307), (00737), (0074(, (0074), (0074007), (007407), (00747), (0075(, (0075), (0075007), (007507), (00757), (0076(, (0076), (0076007), (007607), (00767), (0077(, (0077), (0077007), (007707), (00777), (0078(, (0078), (0078007), (007807), (00787), (0079(, (0079), (0079007), (007907), (00797), (008(, (008), (008007), (00807), (0087), (009(, (009), (009007), (00907), (0097), (01(, (01), (01007), (0107), (017), (02(, (02), (02007), (0207), (027), (03(, (03), (03007), (0307), (037), (04(, (04), (04007), (0407), (047), (05(, (05), (05007), (0507), (057), (06(, (06), (06007), (0607), (067), (07(, (07), (07007), (0707), (077), (08(, (08), (08007), (0807), (087), (09(, (09), (09007), (0907), (097), (1(, (1), (1007), (107), (17), (2(, (2), (2007), (207), (27), (3(, (3), (3007), (307), (37), (4(, (4), (4007), (407), (47), (5(, (5), (5007), (507), (57), (6(, (6), (6007), (607), (67), (7(, (7), (7007), (707), (77), (8(, (8), (8007), (807), (87), (9(, (9), (9007), (907), (97), ), )(, )), )007), )07), )7), 0(, 0), 0007), 007), 07), 1(, 1), 1007), 107), 17), 2(, 2), 2007), 207), 27), 3(, 3), 3007), 307), 37), 4(, 4), 4007), 407), 47), 5(, 5), 5007), 507), 57), 6(, 6), 6007), 607), 67), 7(, 7), 7007), 707), 77), 8(, 8), 8007), 807), 87), 9(, 9), 9007), 907), 97)]
+	public void testCase0(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase1(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase2(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase3(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase4(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase5(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase6(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase7(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase8(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase9(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase10(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase11(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase12(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase13(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase14(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase15(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase16(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase17(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase18(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase19(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase20(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase21(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase22(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase23(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase24(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase25(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase26(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase27(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase28(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase29(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase30(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase31(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase32(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase33(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase34(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase35(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase36(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase37(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase38(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase39(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase40(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase41(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase42(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase43(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase44(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase45(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase46(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase47(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase48(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase49(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase50(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase51(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase52(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase53(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase54(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase55(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase56(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase57(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase58(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase59(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase60(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase61(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase62(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase63(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase64(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase65(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase66(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase67(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase68(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase69(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase70(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase71(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase72(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase73(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase74(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase75(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase76(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase77(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase78(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase79(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase80(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase81(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase82(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase83(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase84(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase85(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase86(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase87(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase88(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase89(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase90(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase91(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase92(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase93(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase94(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase95(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase96(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase97(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase98(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase99(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase100(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase101(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase102(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase103(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase104(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase105(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase106(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase107(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase108(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase109(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase110(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase111(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase112(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase113(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase114(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase115(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase116(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase117(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase118(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase119(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase120(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase121(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase122(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase123(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase124(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase125(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase126(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase127(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase128(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase129(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase130(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase131(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase132(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase133(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase134(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase135(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase136(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase137(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase138(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase139(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase140(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase141(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase142(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase143(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase144(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase145(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase146(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase147(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase148(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase149(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase150(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase151(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase152(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase153(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase154(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase155(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase156(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase157(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase158(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase159(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase160(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase161(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase162(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase163(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase164(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase165(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase166(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase167(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase168(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase169(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase170(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase171(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase172(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase173(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase174(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase175(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase176(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase177(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase178(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase179(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase180(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase181(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase182(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase183(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase184(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase185(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase186(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase187(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase188(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase189(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase190(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase191(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase192(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase193(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase194(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase195(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase196(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase197(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase198(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase199(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase200(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase201(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase202(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase203(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase204(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase205(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase206(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase207(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase208(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase209(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase210(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase211(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase212(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase213(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase214(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase215(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase216(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase217(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase218(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase219(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase220(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase221(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase222(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase223(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase224(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase225(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase226(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase227(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase228(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase229(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase230(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase231(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase232(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase233(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase234(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase235(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase236(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase237(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase238(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase239(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase240(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase241(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase242(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase243(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase244(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase245(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase246(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase247(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase248(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase249(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase250(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase251(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase252(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase253(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase254(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase255(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase256(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase257(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase258(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase259(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase260(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase261(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase262(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase263(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase264(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase265(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase266(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase267(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase268(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase269(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase270(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase271(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase272(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase273(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase274(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase275(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase276(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase277(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase278(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase279(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase280(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase281(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase282(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase283(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase284(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase285(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase286(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase287(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase288(){
+		asserttrue(bondRegex(tests.get(i).toString());
+	}
+	public void testCase289(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase290(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase291(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase292(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase293(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase294(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase295(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase296(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase297(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase298(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase299(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase300(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase301(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase302(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase303(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase304(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase305(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase306(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase307(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase308(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase309(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase310(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase311(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase312(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase313(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase314(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase315(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase316(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase317(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase318(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase319(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase320(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase321(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase322(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase323(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase324(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase325(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase326(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase327(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase328(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase329(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase330(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase331(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase332(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase333(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase334(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase335(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase336(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase337(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase338(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase339(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase340(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase341(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase342(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase343(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase344(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase345(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+	public void testCase346(){
+		assertfalse(bondRegex(tests.get(i).toString());
+	}
+
+}
